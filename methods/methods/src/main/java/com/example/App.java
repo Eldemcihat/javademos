@@ -6,7 +6,7 @@ public class App
     {
         int toplam;
         sayiBul();
-        toplam=topla(16,5,15);
+        toplam=topla(16,5,15,16,18);
         System.out.println(toplam);
         System.out.println(topla(6,8,9));
         
