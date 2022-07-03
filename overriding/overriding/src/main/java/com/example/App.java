@@ -4,6 +4,11 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        BaseKrediManager[] baseKrediManagers = new BaseKrediManager[]
+        {new TarimKrediManager(),new OgrenciKrediManager()};
+        for(BaseKrediManager baseKrediManager:baseKrediManagers){
+            System.out.println(baseKrediManager.hesapla(1000));
+        }
+
     }
 }
