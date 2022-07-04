@@ -9,6 +9,5 @@ public class App
         for(BaseKrediManager baseKrediManager:baseKrediManagers){
             System.out.println(baseKrediManager.hesapla(1000));
         }
-
     }
 }
