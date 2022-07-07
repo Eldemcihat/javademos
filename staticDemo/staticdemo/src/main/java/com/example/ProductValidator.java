@@ -4,7 +4,7 @@ public class ProductValidator {
     ProductValidator(){
         System.out.println("Static constructor çalıştı.");
     }
-    public boolean isValid(Product product){
+    public static boolean isValid(Product product){
         if(!product.name.isEmpty() && product.price>0){
             return true;
         }

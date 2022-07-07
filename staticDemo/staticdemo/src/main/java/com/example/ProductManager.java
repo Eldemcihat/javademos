@@ -4,7 +4,7 @@ public class ProductManager {
 
         ProductValidator productValidator = new ProductValidator();
         public void add(Product product){
-            if(productValidator.isValid(product)){
+            if(ProductValidator.isValid(product)){
                 System.out.println("ürün eklendi");
             }
             else{
