@@ -8,6 +8,5 @@ public class CustomerManager implements ICustomerServices{
     }
     public void add(){
         customerDal.add();
-    }
-    
+    }   
 }
