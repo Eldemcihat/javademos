@@ -1,10 +1,9 @@
 package com.springdemo;
 
-import org.springframework.stereotype.Component;
+import org.springframework.beans.factory.annotation.Value;
 
-@Component
 public class MssqlCustomerDal implements ICustomerDal{
-    
+    @Value("${database.connectionString}")
     String connectionString;
     
     public String getConnectionString() {
@@ -16,7 +15,7 @@ public class MssqlCustomerDal implements ICustomerDal{
 
     @Override
     public void add() {
-       System.out.println("mssql veritabanı"); 
-    }
-    
+       System.out.println("mssql veritabanı");
+       System.out.println("Connection String Length: "+ connectionString.length());
+    }  
 }

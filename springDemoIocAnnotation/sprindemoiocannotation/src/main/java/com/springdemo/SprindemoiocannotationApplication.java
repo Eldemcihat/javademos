@@ -8,8 +8,8 @@ public class SprindemoiocannotationApplication {
 
 	public static void main(String[] args) {
 		
-		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(IocConfig.class);
-		ICustomerDal customerDal = context.getBean(ICustomerDal.class);
+		AnnotationConfigApplicationContext service = new AnnotationConfigApplicationContext(IocConfig.class);
+		ICustomerServices customerDal = service.getBean("service",ICustomerServices.class);
 		
 		customerDal.add();
 	}
